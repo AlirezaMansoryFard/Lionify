@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lionify (Like Spotify)</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="icon" href="public/images/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__item">
+          <span class="header__item-date">
+            <i class="fa-regular fa-calendar header__item-icon"></i>
+            <span class="header__item-date-box"> </span>
+          </span>
+          <span class="header__item-time">
+            <i class="fa-regular fa-clock header__item-icon"></i>
+            <span class="header__item-time-box"> </span>
+          </span>
+        </div>
+        <div class="header__links">
+          <a class="header__link">Login / Register</a>
+          <span class="header__links-shop">
+            <i class="fas fa-basket-shopping header__links-icon"></i>
+            <span class="header__links-text">0</span>
+          </span>
+          <div class="header__card hidden">
+            <div class="header__card-box"></div>
+            <div class="header__card-total">
+              <span class="header__card-total-key">TotalPrice</span>
+              <span class="header__card-total-value">0</span>
+            </div>
+            <div class="header__card-payment">Payment</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--! Singer -->
+      <div class="singer">
+        <div class="singer__content">
+          <div class="singer__cover"></div>
+          <div class="singer__info">
+            <div class="singer__info-right">
+              <div class="singer__profile">
+                <div class="singer__profile-box"></div>
+                <div class="singer__profile-links">
+                  <h3 class="singer__profile-title">Amir Tataloo</h3>
+                  <div>
+                    <a class="singer__profile-link">Follow</a>
+                    <a class="singer__profile-link">SendMessage</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="singer__info-left">
+              <ul class="singer__info-lists">
+                <li class="singer__info-item">
+                  <i class="fa-solid fa-users"></i>
+                  <div class="singer__info-box">
+                    <span class="singer__info-key">Followers</span>
+                    <span id="Followers" class="singer__info-value"
+                      >1,224,365</span
+                    >
+                  </div>
+                </li>
+                <li class="singer__info-item">
+                  <i class="fa-solid fa-user-plus"></i>
+                  <div class="singer__info-box">
+                    <span class="singer__info-key">Following</span>
+                    <span id="following" class="singer__info-value">1</span>
+                  </div>
+                </li>
+                <li class="singer__info-item">
+                  <i class="fa-solid fa-crown"></i>
+                  <div class="singer__info-box">
+                    <span class="singer__info-key">Favorite</span>
+                    <span id="favorite" class="singer__info-value">3</span>
+                  </div>
+                </li>
+                <li class="singer__info-item">
+                  <i class="fa-solid fa-music"></i>
+                  <div class="singer__info-box">
+                    <span class="singer__info-key">viewMusic</span>
+                    <span id="viewMusic" class="singer__info-value"
+                      >100000</span
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--! Sounds -->
+      <div class="main">
+        <div class="main__content">
+          <div class="main__content-part">
+            <div class="main__content-right">
+              <h1 class="main__content-title">Music List</h1>
+
+              <ul id="MusicList" class="main__content-list"></ul>
+            </div>
+            <div class="main__content-left">
+              <h1 class="main__content-title">Favorite Music</h1>
+              <div class="main__content-inside">There is nothing to show</div>
+            </div>
+          </div>
+
+          <div class="swiper mySwiper mb-5 main__swipper">
+            <h1 class="main__content-title mt-5">Others Singer</h1>
+            <div id="swiper-wrapper" class="swiper-wrapper"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="toastMessage">
+      <!-- <div class="Toast" id="addToast">Add Sounds</div> -->
+      <!-- <div class="Toast" id="delToast">Delete Sounds</div> -->
+    </div>
+    <footer class="footer"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        watchSlidesProgress: true,
+        slidesPerView: 3,
+      });
+    </script>
+  </body>
+</html>
