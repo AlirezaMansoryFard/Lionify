@@ -275,6 +275,7 @@ a {
 .singer__info-item {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   direction: ltr;
   margin-bottom: 0.8rem;
   gap: 1rem;
