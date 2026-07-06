@@ -12,7 +12,7 @@ Lionify is an educational front-end project inspired by modern music streaming p
 
 ## 🌐 Live Demo
 
-🔗 https://YOUR-DEMO-LINK.com
+🔗 https://lionify.vercel.app/
 
 ---
 
@@ -127,7 +127,7 @@ Lionify ist ein Frontend-Projekt, das von modernen Musik-Streaming-Plattformen i
 
 ## 🌐 Live Demo
 
-🔗 https://YOUR-DEMO-LINK.com
+🔗 https://lionify.vercel.app/
 
 ---
 
